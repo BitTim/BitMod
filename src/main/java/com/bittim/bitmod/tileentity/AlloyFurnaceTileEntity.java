@@ -184,14 +184,14 @@ public class AlloyFurnaceTileEntity extends LockableTileEntity implements ISided
 
     private void doBurn(ItemStack fuel, AlloyingRecipe recipe)
     {
-        if(currentBurnTime <= 0 && recipe != null) refuel(fuel);
+        if(currentBurnTime <= 0) refuel(fuel, recipe);
         if(currentBurnTime > 0) --currentBurnTime;
     }
 
     @SuppressWarnings("deprecation")
-    private void refuel(ItemStack fuel)
+    private void refuel(ItemStack fuel, AlloyingRecipe recipe)
     {
-        if(!fuel.isEmpty())
+        if(!fuel.isEmpty() && recipe != null)
         {
             burnTime = ForgeHooks.getBurnTime(fuel);
             currentBurnTime = burnTime;

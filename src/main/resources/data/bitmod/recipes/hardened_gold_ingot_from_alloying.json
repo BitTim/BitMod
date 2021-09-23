@@ -11,7 +11,7 @@
     ],
     "result":
     {
-        "item": "bitmod:hardened_gold_ingot",
+        "tag": "forge:ingot/hardened_gold",
         "count": 2
     }
 }

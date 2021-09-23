@@ -1,0 +1,17 @@
+{
+    "type": "bitmod:alloying",
+    "ingredients":
+    [
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        }
+    ],
+    "result":
+    {
+        "item": "bitmod:hardened_gold_ingot",
+        "count": 2
+    }
+}

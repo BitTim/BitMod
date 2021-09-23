@@ -1,0 +1,32 @@
+{
+    "itemGroup.bitmodBlocksTab": "BitMod Blocks",
+    "itemGroup.bitmodItemsTab": "BitMod Items",
+    "itemGroup.bitmodToolsTab": "BitMod Tools",
+    "itemGroup.bitmodArmorTab": "BitMod Armor",
+
+    "block.bitmod.titanium_ore": "Titanium Ore",
+    "block.bitmod.raw_titanium_block": "Block of Raw Titanium",
+    "block.bitmod.titanium_block": "Block of Titanium",
+    "block.bitmod.hardened_gold_block": "Block of Hardened Gold",
+    "block.bitmod.alloy_furnace": "Alloying Furnace",
+
+    "item.bitmod.raw_titanium": "Raw Titanium",
+    "item.bitmod.titanium_ingot": "Titanium Ingot",
+    "item.bitmod.hardened_gold_ingot": "Hardened Gold Ingot",
+    "item.bitmod.hardened_gold_upgrade_kit": "Hardened Gold Upgrade Kit",
+
+    "item.bitmod.hardened_golden_sword": "Hardened Golden Sword",
+    "item.bitmod.hardened_golden_pickaxe": "Hardened Golden Pickaxe",
+    "item.bitmod.hardened_golden_axe": "Hardened Golden Axe",
+    "item.bitmod.hardened_golden_shovel": "Hardened Golden Shovel",
+    "item.bitmod.hardened_golden_hoe": "Hardened Golden Hoe",
+
+    "item.bitmod.hardened_golden_helmet": "Hardened Golden Helmet",
+    "item.bitmod.hardened_golden_chestplate": "Hardened Golden Chestplate",
+    "item.bitmod.hardened_golden_leggings": "Hardened Golden Leggings",
+    "item.bitmod.hardened_golden_boots": "Hardened Golden Boots",
+
+    "container.bitmod.alloy_furnace": "Alloying Furnace",
+
+    "messages.smitten": " has been smitten"
+}

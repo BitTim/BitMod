@@ -1,0 +1,9 @@
+{
+    "variants":
+    {
+        "":
+        {
+            "model": "bitmod:block/hardened_gold_block"
+        }
+    }
+}

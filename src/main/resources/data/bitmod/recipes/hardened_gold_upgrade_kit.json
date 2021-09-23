@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients":
+    [
+        {
+            "tag": "forge:ingot/hardened_gold"
+        },
+        {
+            "tag": "forge:ingot/hardened_gold"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        }
+    ],
+    "result":
+    {
+        "item": "bitmod:hardened_gold_upgrade_kit",
+        "count": 1
+    }
+}

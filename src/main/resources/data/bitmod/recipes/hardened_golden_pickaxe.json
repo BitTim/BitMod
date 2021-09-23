@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "xxx",
+        " s ",
+        " s "
+    ],
+    "key":
+    {
+        "x":
+        {
+            "tag": "forge:ingot/hardened_gold"
+        },
+        "s":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    "result":
+    {
+        "item": "bitmod:hardened_golden_pickaxe",
+        "count": 1
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "variants":
+    {
+        "":
+        {
+            "model": "bitmod:block/raw_titanium_block"
+        }
+    }
+}

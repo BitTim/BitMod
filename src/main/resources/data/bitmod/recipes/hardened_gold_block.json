@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "xxx",
+        "xxx",
+        "xxx"
+    ],
+    "key":
+    {
+        "x":
+        {
+            "tag": "forge:ingot/hardened_gold"
+        }
+    },
+    "result":
+    {
+        "item": "bitmod:hardened_gold_block",
+        "count": 1
+    }
+}

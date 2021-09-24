@@ -1,7 +1,7 @@
-package com.bittim.bitmod.events;
+package com.bittim.bitmod.setup;
 
 import com.bittim.bitmod.BitMod;
-import com.bittim.bitmod.commands.SmiteCommand;
+import com.bittim.bitmod.command.SmiteCommand;
 
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;

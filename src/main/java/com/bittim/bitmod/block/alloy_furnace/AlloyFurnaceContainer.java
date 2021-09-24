@@ -1,7 +1,7 @@
-package com.bittim.bitmod.container;
+package com.bittim.bitmod.block.alloy_furnace;
 
-import com.bittim.bitmod.tileentity.AlloyFurnaceTileEntity;
-import com.bittim.bitmod.util.BitModTags;
+import com.bittim.bitmod.setup.ModContainers;
+import com.bittim.bitmod.setup.ModTags;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -37,14 +37,14 @@ public class AlloyFurnaceContainer extends Container
         this.addSlot(new Slot(this.inventory, 0, 56, 16) {
             @Override
             public boolean mayPlace(ItemStack stack) {
-                return BitModTags.Items.ALLOYABLE_ITEMS.contains(stack.getItem());
+                return ModTags.Items.ALLOYABLE_ITEMS.contains(stack.getItem());
             }
         });
 
         this.addSlot(new Slot(this.inventory, 1, 56, 53) {
             @Override
             public boolean mayPlace(ItemStack stack) {
-                return BitModTags.Items.ALLOYABLE_ITEMS.contains(stack.getItem());
+                return ModTags.Items.ALLOYABLE_ITEMS.contains(stack.getItem());
             }
         });
 

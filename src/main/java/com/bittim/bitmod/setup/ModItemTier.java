@@ -1,4 +1,4 @@
-package com.bittim.bitmod.item;
+package com.bittim.bitmod.setup;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;

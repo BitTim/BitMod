@@ -1,7 +1,7 @@
-package com.bittim.bitmod.container;
+package com.bittim.bitmod.setup;
 
-import com.bittim.bitmod.screen.AlloyFurnaceScreen;
-import com.bittim.bitmod.setup.RegistryHandler;
+import com.bittim.bitmod.block.alloy_furnace.AlloyFurnaceContainer;
+import com.bittim.bitmod.block.alloy_furnace.AlloyFurnaceScreen;
 
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.inventory.container.Container;
@@ -26,6 +26,6 @@ public class ModContainers
     }
 
     private static <T extends Container> RegistryObject<ContainerType<T>> register(String name, IContainerFactory<T> factory) {
-        return RegistryHandler.CONTAINERS.register(name, () -> IForgeContainerType.create(factory));
+        return Registration.CONTAINERS.register(name, () -> IForgeContainerType.create(factory));
     }
 }

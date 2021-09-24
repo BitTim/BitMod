@@ -1,7 +1,7 @@
-package com.bittim.bitmod.recipe;
+package com.bittim.bitmod.setup;
 
 import com.bittim.bitmod.BitMod;
-import com.bittim.bitmod.setup.RegistryHandler;
+import com.bittim.bitmod.recipe.AlloyingRecipe;
 
 import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraft.item.crafting.IRecipeType;
@@ -17,7 +17,7 @@ public class ModRecipes
 
     public static class Serializers
     {
-        public static final RegistryObject<IRecipeSerializer<?>> ALLOYING = RegistryHandler.RECIPE_SERIALIZERS.register("alloying", AlloyingRecipe.Serializer::new);
+        public static final RegistryObject<IRecipeSerializer<?>> ALLOYING = Registration.RECIPE_SERIALIZERS.register("alloying", AlloyingRecipe.Serializer::new);
         public static void register() { }
     }
 

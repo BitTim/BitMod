@@ -1,4 +1,6 @@
-package com.bittim.bitmod.world.gen;
+package com.bittim.bitmod.setup.gen;
+
+import com.bittim.bitmod.world.gen.OreType;
 
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;

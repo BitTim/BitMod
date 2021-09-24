@@ -2,8 +2,7 @@ package com.bittim.bitmod.block.alloy_furnace;
 
 import javax.annotation.Nullable;
 
-import com.bittim.bitmod.block.ModBlocks;
-import com.bittim.bitmod.tileentity.AlloyFurnaceTileEntity;
+import com.bittim.bitmod.setup.ModBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

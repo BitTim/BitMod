@@ -1,6 +1,6 @@
 package com.bittim.bitmod.world.gen;
 
-import com.bittim.bitmod.block.ModBlocks;
+import com.bittim.bitmod.setup.ModBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraftforge.common.util.Lazy;

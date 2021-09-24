@@ -1,4 +1,4 @@
-package com.bittim.bitmod.commands;
+package com.bittim.bitmod.command;
 
 import java.util.Collection;
 

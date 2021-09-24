@@ -2,6 +2,7 @@ package com.bittim.bitmod.recipe;
 
 import javax.annotation.Nullable;
 
+import com.bittim.bitmod.setup.ModRecipes;
 import com.google.gson.JsonObject;
 
 import net.minecraft.inventory.IInventory;

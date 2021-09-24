@@ -1,11 +1,10 @@
-package com.bittim.bitmod.tileentity;
+package com.bittim.bitmod.block.alloy_furnace;
 
 import javax.annotation.Nullable;
 
-import com.bittim.bitmod.block.alloy_furnace.AlloyFurnaceBlock;
-import com.bittim.bitmod.container.AlloyFurnaceContainer;
 import com.bittim.bitmod.recipe.AlloyingRecipe;
-import com.bittim.bitmod.recipe.ModRecipes;
+import com.bittim.bitmod.setup.ModRecipes;
+import com.bittim.bitmod.setup.ModTileEntities;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;

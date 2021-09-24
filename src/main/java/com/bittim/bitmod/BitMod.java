@@ -17,7 +17,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.stream.Collectors;
-import com.bittim.bitmod.setup.RegistryHandler;
+
+import com.bittim.bitmod.setup.Registration;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(BitMod.MOD_ID)
@@ -33,7 +34,7 @@ public class BitMod
         // Register the setup method for modloading
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        RegistryHandler.register(eventBus);
+        Registration.register(eventBus);
 
 
         eventBus.addListener(this::setup);

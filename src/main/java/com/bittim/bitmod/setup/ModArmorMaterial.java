@@ -1,4 +1,4 @@
-package com.bittim.bitmod.item;
+package com.bittim.bitmod.setup;
 
 import java.util.function.Supplier;
 

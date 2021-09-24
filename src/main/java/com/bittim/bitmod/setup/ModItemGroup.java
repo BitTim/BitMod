@@ -1,6 +1,4 @@
-package com.bittim.bitmod.item;
-
-import com.bittim.bitmod.block.ModBlocks;
+package com.bittim.bitmod.setup;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;

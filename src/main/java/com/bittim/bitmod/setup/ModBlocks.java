@@ -1,10 +1,8 @@
-package com.bittim.bitmod.block;
+package com.bittim.bitmod.setup;
 
 import java.util.function.Supplier;
 
 import com.bittim.bitmod.block.alloy_furnace.AlloyFurnaceBlock;
-import com.bittim.bitmod.item.ModItemGroup;
-import com.bittim.bitmod.setup.RegistryHandler;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -77,13 +75,13 @@ public class ModBlocks {
 
     private static <T extends Block> RegistryObject<T> registerNoItem(String name, Supplier<T> block)
     {
-        return RegistryHandler.BLOCKS.register(name, block);
+        return Registration.BLOCKS.register(name, block);
     }
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> block, ItemGroup group)
     {
         RegistryObject<T> ret = registerNoItem(name, block);
-        RegistryHandler.ITEMS.register(name, () -> new BlockItem(ret.get(), new Item.Properties().tab(group)));
+        Registration.ITEMS.register(name, () -> new BlockItem(ret.get(), new Item.Properties().tab(group)));
         return ret;
     }
 }

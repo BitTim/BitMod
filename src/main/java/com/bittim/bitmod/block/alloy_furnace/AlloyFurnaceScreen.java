@@ -1,7 +1,6 @@
-package com.bittim.bitmod.screen;
+package com.bittim.bitmod.block.alloy_furnace;
 
 import com.bittim.bitmod.BitMod;
-import com.bittim.bitmod.container.AlloyFurnaceContainer;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 

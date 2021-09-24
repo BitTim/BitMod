@@ -1,7 +1,7 @@
-package com.bittim.bitmod.world;
+package com.bittim.bitmod.setup;
 
 import com.bittim.bitmod.BitMod;
-import com.bittim.bitmod.world.gen.ModOreGeneration;
+import com.bittim.bitmod.setup.gen.ModOreGeneration;
 
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "S",
+    "S"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/hardened_gold"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "bitmod:hardened_golden_shovel"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "GG"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/hardened_gold"
+    },
+    "G": {
+      "tag": "forge:ingots/gold"
+    }
+  },
+  "result": {
+    "item": "bitmod:hardened_gold_upgrade_kit"
+  }
+}

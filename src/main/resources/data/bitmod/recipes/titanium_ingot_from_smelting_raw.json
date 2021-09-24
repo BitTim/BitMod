@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "item": "bitmod:raw_titanium"
-    },
-    "result": "bitmod:titanium_ingot",
-    "experience": 1.0,
-    "cookingtime": 200
-}

@@ -1,8 +1,8 @@
 {
-    "itemGroup.bitmodBlocksTab": "BitMod Blocks",
-    "itemGroup.bitmodItemsTab": "BitMod Items",
-    "itemGroup.bitmodToolsTab": "BitMod Tools",
-    "itemGroup.bitmodArmorTab": "BitMod Armor",
+    "itemGroup.bitmod_blocks_tab": "BitMod Blocks",
+    "itemGroup.bitmod_items_tab": "BitMod Items",
+    "itemGroup.bitmod_tools_tab": "BitMod Tools",
+    "itemGroup.bitmod_armor_tab": "BitMod Armor",
 
     "block.bitmod.titanium_ore": "Titanium Ore",
     "block.bitmod.raw_titanium_block": "Block of Raw Titanium",

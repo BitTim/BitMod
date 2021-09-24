@@ -145,15 +145,7 @@ public class AlloyFurnaceTileEntity extends LockableTileEntity implements ISided
 
         if(!current.isEmpty())
         {
-            int newCount = current.getCount() + output.getCount();
-
-            ItemStack currentItem = current.copy();
-            currentItem.setCount(1);
-
-            ItemStack outputItem = output.copy();
-            outputItem.setCount(1);
-
-            if(!ItemStack.matches(currentItem, outputItem) || newCount > output.getMaxStackSize())
+            if(!canAlloy(recipe, current, output))
             {
                 stopWork();
                 return;
@@ -191,7 +183,10 @@ public class AlloyFurnaceTileEntity extends LockableTileEntity implements ISided
     @SuppressWarnings("deprecation")
     private void refuel(ItemStack fuel, AlloyingRecipe recipe)
     {
-        if(!fuel.isEmpty() && recipe != null)
+        ItemStack current = getItem(3);
+        ItemStack output = recipe != null ? getWorkOutput(recipe) : ItemStack.EMPTY;
+
+        if(!fuel.isEmpty() && canAlloy(recipe, current, output))
         {
             burnTime = ForgeHooks.getBurnTime(fuel);
             currentBurnTime = burnTime;
@@ -203,6 +198,22 @@ public class AlloyFurnaceTileEntity extends LockableTileEntity implements ISided
         }
         
         AlloyFurnaceBlock.setLitState(isLit, this.level, this.worldPosition);
+    }
+
+    private boolean canAlloy(AlloyingRecipe recipe, ItemStack current, ItemStack output)
+    {
+        if(recipe == null) return false;
+
+        int newCount = current.getCount() + output.getCount();
+        if(!current.isEmpty() && newCount > output.getMaxStackSize()) return false;
+
+        ItemStack currentItem = current.copy();
+        ItemStack outputItem = output.copy();
+        currentItem.setCount(1);
+        outputItem.setCount(1);
+        if(!current.isEmpty() && !ItemStack.matches(currentItem, outputItem)) return false;
+
+        return true;
     }
     
     @Override

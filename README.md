@@ -1,5 +1,5 @@
 # BitMod
-## A Random Minecraft Mod for Forge 1.16.5 that I am making 
+A Random Minecraft Mod for Forge 1.16.5 that I am making 
 
 ## Current Features:
 - Alloying Furnace for creating new materials:

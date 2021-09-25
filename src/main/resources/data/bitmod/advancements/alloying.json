@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "bitmod:alloy_furnace"
+    },
+    "title": "The Alloying begins",
+    "description": "Craft an Alloying Furnace",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:story/smelt_iron",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "bitmod:alloy_furnace"
+          }
+        ]
+      }
+    }
+  }
+}

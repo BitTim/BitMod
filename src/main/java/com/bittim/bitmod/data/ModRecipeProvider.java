@@ -7,6 +7,7 @@ import com.bittim.bitmod.setup.ModBlocks;
 import com.bittim.bitmod.setup.ModItems;
 import com.bittim.bitmod.setup.ModTags;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.data.CookingRecipeBuilder;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
@@ -213,6 +214,16 @@ public class ModRecipeProvider extends RecipeProvider
         CookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.TITANIUM_ORE.get()), ModItems.TITANIUM_INGOT.get(), 0.7f, 100)
             .unlockedBy("has_item", has(ModItems.RAW_TITANIUM.get()))
             .save(consumer, modID("titanium_ingot_from_blasting_ore"));
+        
+        ShapedRecipeBuilder.shaped(ModBlocks.ALLOY_FURNACE.get())
+            .define('I', Items.IRON_INGOT)
+            .define('#', Blocks.SMOOTH_STONE)
+            .define('B', Blocks.BLAST_FURNACE)
+            .pattern("III")
+            .pattern("IBI")
+            .pattern("###")
+            .unlockedBy("has_item", has(Blocks.BLAST_FURNACE))
+            .save(consumer);
     }
 
     private static ResourceLocation modID(String path) {

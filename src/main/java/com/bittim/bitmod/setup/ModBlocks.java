@@ -61,7 +61,8 @@ public class ModBlocks {
             .strength(2)
             .sound(SoundType.STONE)
             .harvestLevel(0)
-            .harvestTool(ToolType.PICKAXE)),
+            .harvestTool(ToolType.PICKAXE)
+            .lightLevel(AlloyFurnaceBlock.lightLevel)),
         ModItemGroup.BITMOD_BLOCKS_GROUP);
     
 

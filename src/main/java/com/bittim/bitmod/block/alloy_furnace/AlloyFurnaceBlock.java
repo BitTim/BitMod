@@ -1,5 +1,8 @@
 package com.bittim.bitmod.block.alloy_furnace;
 
+import java.util.Random;
+import java.util.function.ToIntFunction;
+
 import javax.annotation.Nullable;
 
 import com.bittim.bitmod.setup.ModBlocks;
@@ -12,18 +15,24 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ActionResultType;
+import net.minecraft.util.Direction;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.fml.network.NetworkHooks;
 
 public class AlloyFurnaceBlock extends Block
@@ -63,6 +72,30 @@ public class AlloyFurnaceBlock extends Block
             NetworkHooks.openGui((ServerPlayerEntity) player, te, te::encodeExtraData);
         }
     }
+
+    @OnlyIn(Dist.CLIENT)
+   public void animateTick(BlockState state, World world, BlockPos pos, Random rand) {
+      if (state.getValue(LIT)) {
+         double x = (double)pos.getX() + 0.5D;
+         double y = (double)pos.getY();
+         double z = (double)pos.getZ() + 0.5D;
+         if (rand.nextDouble() < 0.1D) {
+            world.playLocalSound(x, y, z, SoundEvents.BLASTFURNACE_FIRE_CRACKLE, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
+         }
+
+         Direction direction = state.getValue(FACING);
+         Direction.Axis direction$axis = direction.getAxis();
+         
+         double dOff = rand.nextDouble() * 0.6D - 0.3D;
+         double xOff = direction$axis == Direction.Axis.X ? (double)direction.getStepX() * 0.52D : dOff;
+         double yOff = rand.nextDouble() * 9.0D / 16.0D;
+         double zOff = direction$axis == Direction.Axis.Z ? (double)direction.getStepZ() * 0.52D : dOff;
+
+         world.addParticle(ParticleTypes.SMOKE, x + xOff, y + yOff, z + zOff, 0.0D, 0.0D, 0.0D);
+      }
+   }
+
+   public static ToIntFunction<BlockState> lightLevel = (state) -> state.getValue(LIT) ? 13 : 0;
 
     @Nullable
     @Override

@@ -4,7 +4,7 @@
     "item": "minecraft:iron_chestplate"
   },
   "addition": {
-    "item": "bitmod:hardened_gold_upgrade_kit"
+    "tag": "bitmod:kits/hardened_gold_upgrade"
   },
   "result": {
     "item": "bitmod:hardened_golden_chestplate"

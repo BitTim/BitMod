@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "N",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "tag": "bitmod:kits/netherite_reinforcement"
+    },
+    "N": {
+      "tag": "forge:ingots/netherite"
+    }
+  },
+  "result": {
+    "item": "bitmod:reinforced_netherite_upgrade_kit"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_pickaxe"
+  },
+  "addition": {
+    "tag": "bitmod:kits/diamond_reinforcement"
+  },
+  "result": {
+    "item": "bitmod:reinforced_diamond_pickaxe"
+  }
+}

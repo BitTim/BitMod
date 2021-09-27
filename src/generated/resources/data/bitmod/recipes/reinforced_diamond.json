@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bitmod:reinforced_diamond_block"
+    }
+  ],
+  "result": {
+    "item": "bitmod:reinforced_diamond",
+    "count": 9
+  }
+}

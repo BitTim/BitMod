@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "bitmod:hardened_golden_pickaxe"
+  },
+  "addition": {
+    "tag": "bitmod:kits/diamond_upgrade"
+  },
+  "result": {
+    "item": "minecraft:diamond_pickaxe"
+  }
+}

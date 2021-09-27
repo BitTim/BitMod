@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "bitmod:block/reinforced_netherite_block"
+  }
+}

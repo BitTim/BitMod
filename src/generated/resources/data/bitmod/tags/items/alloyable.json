@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "minecraft:iron_ingot",
-    "minecraft:gold_ingot",
-    "minecraft:diamond",
-    "minecraft:netherite_ingot",
-    "bitmod:titanium_ingot"
+    "#forge:ingots/iron",
+    "#forge:ingots/gold",
+    "#forge:gems/diamond",
+    "#forge:ingots/netherite",
+    "#forge:ingots/titanium"
   ]
 }

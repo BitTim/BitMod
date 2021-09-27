@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "bitmod:hardened_gold_ingot"
+    "#forge:ingots/hardened_gold",
+    "#forge:gems/reinforced_diamond",
+    "#forge:ingots/reinforced_netherite"
   ]
 }

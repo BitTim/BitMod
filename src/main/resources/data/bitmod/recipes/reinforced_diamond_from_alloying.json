@@ -1,0 +1,17 @@
+{
+    "type": "bitmod:alloying",
+    "ingredients":
+    [
+        {
+            "tag": "forge:gems/diamond"
+        },
+        {
+            "tag": "forge:ingots/titanium"
+        }
+    ],
+    "result":
+    {
+        "tag": "forge:gems/reinforced_diamond",
+        "count": 2
+    }
+}

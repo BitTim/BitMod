@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "bitmod:guilded_reinforced_diamond_axe"
+  },
+  "addition": {
+    "tag": "bitmod:kits/reinforced_netherite_upgrade"
+  },
+  "result": {
+    "item": "bitmod:guilded_reinforced_netherite_axe"
+  }
+}

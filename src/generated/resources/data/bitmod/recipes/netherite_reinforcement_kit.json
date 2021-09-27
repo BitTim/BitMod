@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "H#H",
+    "TTT"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/netherite"
+    },
+    "T": {
+      "tag": "forge:ingots/titanium"
+    },
+    "H": {
+      "tag": "forge:ingots/hardened_gold"
+    }
+  },
+  "result": {
+    "item": "bitmod:netherite_reinforcement_kit"
+  }
+}

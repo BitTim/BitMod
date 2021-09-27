@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#forge:storage_blocks/titanium"
+    "#forge:storage_blocks/titanium",
+    "#forge:storage_blocks/hardened_gold",
+    "#forge:storage_blocks/reinforced_diamond",
+    "#forge:storage_blocks/reinforced_netherite"
   ]
 }

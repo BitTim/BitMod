@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "bitmod:reinforced_netherite_ingot"
+    },
+    "title": "Stronger Netherite",
+    "description": "Alloy Netherite with Titanium",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "bitmod:reinforced_diamond",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "bitmod:reinforced_diamond"
+          }
+        ]
+      }
+    }
+  }
+}

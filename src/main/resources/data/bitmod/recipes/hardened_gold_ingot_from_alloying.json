@@ -3,10 +3,10 @@
     "ingredients":
     [
         {
-            "item": "minecraft:iron_ingot"
+            "tag": "forge:ingots/iron"
         },
         {
-            "item": "minecraft:gold_ingot"
+            "tag": "forge:ingots/gold"
         }
     ],
     "result":

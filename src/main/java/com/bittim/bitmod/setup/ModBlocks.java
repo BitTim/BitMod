@@ -54,6 +54,26 @@ public class ModBlocks {
             .harvestTool(ToolType.PICKAXE)
             .requiresCorrectToolForDrops()),
         ModItemGroup.BITMOD_BLOCKS_GROUP);
+    
+    public static final RegistryObject<Block> REINFORCED_DIAMOND_BLOCK = register("reinforced_diamond_block", () -> 
+        new Block(AbstractBlock.Properties
+            .of(Material.METAL)
+            .strength(5)
+            .sound(SoundType.METAL)
+            .harvestLevel(3)
+            .harvestTool(ToolType.PICKAXE)
+            .requiresCorrectToolForDrops()),
+        ModItemGroup.BITMOD_BLOCKS_GROUP);
+    
+    public static final RegistryObject<Block> REINFORCED_NETHERITE_BLOCK = register("reinforced_netherite_block", () -> 
+        new Block(AbstractBlock.Properties
+            .of(Material.METAL)
+            .strength(5)
+            .sound(SoundType.METAL)
+            .harvestLevel(3)
+            .harvestTool(ToolType.PICKAXE)
+            .requiresCorrectToolForDrops()),
+        ModItemGroup.BITMOD_BLOCKS_GROUP);
 
     public static final RegistryObject<AlloyFurnaceBlock> ALLOY_FURNACE = register("alloy_furnace", () -> 
         new AlloyFurnaceBlock(AbstractBlock.Properties

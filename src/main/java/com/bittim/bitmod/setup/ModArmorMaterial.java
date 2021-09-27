@@ -13,7 +13,12 @@ import net.minecraft.util.SoundEvents;
 
 public enum ModArmorMaterial implements IArmorMaterial
 {
-    HARDENED_GOLD("hardened_gold", 24, new int[]{2, 6, 7, 3}, 12, SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.HARDENED_GOLD_INGOT.get()));
+    HARDENED_GOLD("hardened_gold", 24, new int[]{2, 6, 7, 3}, 12, SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.HARDENED_GOLD_INGOT.get())),
+    TITANIUM("titanium", 34, new int[]{3, 6, 8, 3}, 12, SoundEvents.ARMOR_EQUIP_IRON, 2.3f, 0f, () -> Ingredient.of(ModItems.TITANIUM_INGOT.get())),
+    REINFORCED_DIAMOND("reinforced_diamond", 35, new int[]{4, 7, 9, 4}, 13, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.5f, 0f, () -> Ingredient.of(ModItems.REINFORCED_DIAMOND.get())),
+    GUILDED_REINFORCED_DIAMOND("guilded_reinforced_diamond", 36, new int[]{4, 7, 9, 4}, 14, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.7f, 0f, () -> Ingredient.of(ModItems.REINFORCED_DIAMOND.get())),
+    REINFORCED_NETHERITE("reinforced_netherite", 38, new int[]{5, 8, 10, 5}, 20, SoundEvents.ARMOR_EQUIP_NETHERITE, 4f, 0.2f, () -> Ingredient.of(ModItems.REINFORCED_NETHERITE_INGOT.get())),
+    GUILDED_REINFORCED_NETHERITE("guilded_reinforced_netherite", 39, new int[]{5, 8, 10, 5}, 25, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.3f, 0.3f, () -> Ingredient.of(ModItems.REINFORCED_NETHERITE_INGOT.get()));
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;

@@ -4,7 +4,7 @@
       "item": "bitmod:hardened_gold_ingot"
     },
     "title": "Gold, but good?",
-    "description": "Alloy iron with gold",
+    "description": "Alloy Iron with Gold",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

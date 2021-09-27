@@ -54,6 +54,8 @@ public class ModLootTableProvider extends LootTableProvider
         @Override
         protected void addTables() {
             dropSelf(ModBlocks.HARDENED_GOLD_BLOCK.get());
+            dropSelf(ModBlocks.REINFORCED_DIAMOND_BLOCK.get());
+            dropSelf(ModBlocks.REINFORCED_NETHERITE_BLOCK.get());
             dropSelf(ModBlocks.TITANIUM_BLOCK.get());
             dropSelf(ModBlocks.RAW_TITANIUM_BLOCK.get());
             dropSelf(ModBlocks.ALLOY_FURNACE.get());

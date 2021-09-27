@@ -1,0 +1,17 @@
+{
+    "type": "bitmod:alloying",
+    "ingredients":
+    [
+        {
+            "tag": "forge:ingots/netherite"
+        },
+        {
+            "tag": "forge:ingots/titanium"
+        }
+    ],
+    "result":
+    {
+        "tag": "forge:ingots/reinforced_netherite",
+        "count": 2
+    }
+}

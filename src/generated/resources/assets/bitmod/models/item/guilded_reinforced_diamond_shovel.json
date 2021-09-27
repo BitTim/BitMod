@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "bitmod:item/guilded_reinforced_diamond_shovel"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "## ",
+    "TTT"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:gems/reinforced_diamond"
+    },
+    "T": {
+      "tag": "forge:ingots/titanium"
+    }
+  },
+  "result": {
+    "item": "bitmod:diamond_reinforcement_kit"
+  }
+}

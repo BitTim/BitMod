@@ -18,6 +18,8 @@ public class ModBlockStateProvider extends BlockStateProvider
         simpleBlock(ModBlocks.HARDENED_GOLD_BLOCK.get());
         simpleBlock(ModBlocks.TITANIUM_ORE.get());
         simpleBlock(ModBlocks.TITANIUM_BLOCK.get());
+        simpleBlock(ModBlocks.REINFORCED_DIAMOND_BLOCK.get());
+        simpleBlock(ModBlocks.REINFORCED_NETHERITE_BLOCK.get());
         simpleBlock(ModBlocks.RAW_TITANIUM_BLOCK.get());
     }
 }

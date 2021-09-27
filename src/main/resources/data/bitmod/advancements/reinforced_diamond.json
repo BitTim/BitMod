@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "bitmod:reinforced_diamond"
+    },
+    "title": "Better Diamonds",
+    "description": "Alloy Diamonds with Titanium",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "bitmod:titanium",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "bitmod:reinforced_diamond"
+          }
+        ]
+      }
+    }
+  }
+}

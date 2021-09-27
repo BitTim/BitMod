@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "bitmod:reinforced_diamond_chestplate"
+  },
+  "addition": {
+    "tag": "forge:ingots/gold"
+  },
+  "result": {
+    "item": "bitmod:guilded_reinforced_diamond_chestplate"
+  }
+}

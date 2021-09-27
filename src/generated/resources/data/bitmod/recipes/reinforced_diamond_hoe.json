@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    " S",
+    " S"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:gems/reinforced_diamond"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "bitmod:reinforced_diamond_hoe"
+  }
+}

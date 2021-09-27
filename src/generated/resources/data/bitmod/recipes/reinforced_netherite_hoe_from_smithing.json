@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_hoe"
+  },
+  "addition": {
+    "tag": "bitmod:kits/netherite_reinforcement"
+  },
+  "result": {
+    "item": "bitmod:reinforced_netherite_hoe"
+  }
+}

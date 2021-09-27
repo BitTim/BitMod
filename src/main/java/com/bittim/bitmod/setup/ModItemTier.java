@@ -8,7 +8,12 @@ import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier
 {
-    HARDENED_GOLD(2, 512, 12.0f, 2.0f, 22, () -> Ingredient.of(ModItems.HARDENED_GOLD_INGOT.get()));
+    HARDENED_GOLD(2, 512, 12.0f, 2.0f, 22, () -> Ingredient.of(ModItems.HARDENED_GOLD_INGOT.get())),
+    TITANIUM(3, 1661, 8.5f, 3.5f, 12, () -> Ingredient.of(ModItems.TITANIUM_INGOT.get())),
+    REINFORCED_DIAMOND(3, 1861, 9.0f, 3.5f, 15, () -> Ingredient.of(ModItems.REINFORCED_DIAMOND.get())),
+    GUILDED_REINFORCED_DIAMOND(3, 1961, 10.0f, 4.0f, 20, () -> Ingredient.of(ModItems.REINFORCED_DIAMOND.get())),
+    REINFORCED_NETHERITE(4, 3031, 12.0f, 5.0f, 22, () -> Ingredient.of(ModItems.REINFORCED_NETHERITE_INGOT.get())),
+    GUILDED_REINFORCED_NETHERITE(4, 3531, 15.0f, 5.5f, 22, () -> Ingredient.of(ModItems.REINFORCED_NETHERITE_INGOT.get()));
     
     private final int harvestLevel;
     private final int maxUses;
